@@ -1,0 +1,30 @@
+/* Estilos específicos das páginas de detalhe de projetos */
+
+.projeto-hero {
+  position: relative; width: 100%; height: 55vh; overflow: hidden;
+}
+.projeto-hero img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.projeto-hero-overlay {
+  position: absolute; inset: 0; display: flex; flex-direction: column;
+  justify-content: flex-end; padding: 40px 6%;
+  background: linear-gradient(to top, rgba(0,0,0,.55), transparent 45%);
+  color: #fff;
+}
+.projeto-hero .overlay-category { color: var(--brand-accent); font-weight: 700; letter-spacing: .14em; text-transform: uppercase; font-size: 12px; }
+.projeto-hero h1 { font-size: 36px; margin-top: 8px; }
+
+.projeto-body { max-width: 900px; margin: 40px auto; padding: 60px 5%; background: transparent; color: #111; }
+.projeto-meta-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 20px; }
+.projeto-meta-grid div { background: var(--surface); padding: 14px; border-radius: 8px; }
+.projeto-meta-grid strong { display: block; font-size: 13px; color: var(--brand-dark); margin-bottom: 6px; }
+
+.projeto-galeria { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 24px; }
+.projeto-galeria img { width: 100%; display: block; border-radius: 12px; object-fit: cover; }
+
+.btn-back { display: inline-block; text-decoration: none; color: var(--brand-dark); border: 1px solid var(--border-soft); padding: 8px 14px; border-radius: 8px; }
+.btn-back:hover { background: var(--surface); }
+
+@media (max-width: 800px) {
+  .projeto-meta-grid { grid-template-columns: 1fr; }
+  .projeto-galeria { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "engitom-assets",
+  "version": "1.0.0",
+  "description": "Scripts para otimizar imagens do site Engitom",
+  "scripts": {
+    "optimize-images": "node scripts/optimize-images.js"
+  },
+  "dependencies": {
+    "sharp": "^0.32.0"
+  }
+}
