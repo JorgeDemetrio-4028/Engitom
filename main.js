@@ -146,4 +146,20 @@ if (contactForm) {
   });
 }
 
+// ── Hamburger menu ──
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.querySelector('nav');
+
+hamburger?.addEventListener('click', () => {
+  hamburger.classList.toggle('open');
+  navMenu.classList.toggle('open');
+});
+
+document.querySelectorAll('nav a').forEach(link => {
+  link.addEventListener('click', () => {
+    hamburger.classList.remove('open');
+    navMenu.classList.remove('open');
+  });
+});
+
 
